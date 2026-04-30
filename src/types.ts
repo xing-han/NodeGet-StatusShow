@@ -87,9 +87,7 @@ export interface SiteConfig {
   site_name?: string
   site_logo?: string
   site_log?: string
-  theme_name?: string
-  theme_repo?: string
-  theme_config?: { footer?: string }
+  footer?: string
   site_tokens: { name: string; backend_url: string; token: string }[]
 }
 

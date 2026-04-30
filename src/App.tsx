@@ -177,7 +177,7 @@ export function App() {
         )}
       </main>
 
-      <Footer text={config.theme_config?.footer} />
+      <Footer text={config.footer} />
 
       <NodeDetail
         node={selectedNode}
