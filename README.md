@@ -11,20 +11,22 @@ npm i
 npm run dev
 ```
 
-# 部署
-
-build 完是纯静态站 丢哪都行
-
-官方最推荐的方式是下面基于fork的一键部署方式，方便升级至新版
-
 ## 一键部署
 
+此为官方最推荐的部署方式，方便升级至新版
+
 Fork本仓库 修改public/config.json 然后再cloudflare pages / vercel 直接摁部署 绑定域名
-要更新就在GitHub仓库摁 sync就行
+
+要更新版本则就在 fork 的 GitHub 仓库点击 sync 就行，可以轻松且可控的升级
 
 ## 编译结果下载
+
+本项目 build 完是纯静态站， 丢哪都行
+
 官方准备了一份可以直接下载的编译结果，方便需要把静态文件部署到其他地方的用户
+
 此下载链接始终与最新版保持一致，利用cloudflare pages自动编译生成
+
 <https://nodeget.pages.dev/nodeget-statusshow.zip>
 
 ## 环境变量
