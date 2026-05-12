@@ -3,6 +3,9 @@ import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { ZipArchive } from 'archiver';
 import themeTemplate from '../nodeget-theme.json' with { type: 'json' }
+import pkg from '../package.json' with { type: 'json' }
+
+themeTemplate.version = pkg.version
 
 // 项目根目录
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')

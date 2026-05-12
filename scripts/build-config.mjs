@@ -2,6 +2,9 @@ import { writeFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import themeTemplate from '../nodeget-theme.json' with { type: 'json' }
+import pkg from '../package.json' with { type: 'json' }
+
+themeTemplate.version = pkg.version
 
 // 计算项目根目录和输出文件路径
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')

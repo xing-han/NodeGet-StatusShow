@@ -17,5 +17,6 @@
       "token": "YOUR_TOKEN_HERE"
     }
   ],
+  "version": "will be auto filled using version in package.json",
   "license": ""
 }

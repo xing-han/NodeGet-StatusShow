@@ -104,6 +104,7 @@ export interface SiteConfig {
     backend_url: string; 
     token: string 
   }[]
+  "version"?: string
   "license"?: string
 }
 
