@@ -29,7 +29,7 @@ export function Footer({ text, repo, dist_page }: { text?: string, repo?: string
           <HardDriveDownload className='inline-block w-3 mr-1' />
           提取当前主题
         </a>
-        {true && (
+        {outdated && (
           <>
             <a href={laststDist} target="_blank" rel="noreferrer" className="flex items-center hover:text-primary transition-colors ml-2 text-destructive">
               <FolderSync className='inline-block w-3 mr-1' />
